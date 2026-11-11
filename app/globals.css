@@ -67,6 +67,18 @@ h3 {
   animation: pulse-ring 2s infinite;
 }
 
+@keyframes pulse-ring-blue {
+  0% {
+    box-shadow: 0 0 0 0 rgb(77 133 179 / 0.55);
+  }
+  100% {
+    box-shadow: 0 0 0 16px rgb(77 133 179 / 0);
+  }
+}
+.call-pulse {
+  animation: pulse-ring-blue 2s infinite 1s;
+}
+
 @keyframes pop {
   from {
     opacity: 0;
@@ -100,6 +112,7 @@ input[type="range"] {
     transition: none;
   }
   .wa-pulse,
+  .call-pulse,
   .pop {
     animation: none;
   }

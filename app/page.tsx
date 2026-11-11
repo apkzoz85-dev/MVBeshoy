@@ -8,6 +8,7 @@ import {
   Flower2,
   Footprints,
   MapPin,
+  Phone,
   Sparkles,
   Trees,
   Waves,
@@ -282,6 +283,21 @@ export default function Page() {
                       >
                         اعرف المساحات والمتاح
                       </LeadButton>
+                      <div className="mt-2.5 grid grid-cols-2 gap-2.5">
+                        <WaLink
+                          msg={`مرحباً، عايز أعرف المساحات والأسعار المتاحة لـ ${u.name} في ماونتن فيو تشيل اوت بارك اكتوبر`}
+                          label={`واتساب — ${u.name}`}
+                          className="flex items-center justify-center gap-2 rounded-lg bg-wa px-3 py-3 text-sm font-bold text-white transition hover:brightness-110"
+                        >
+                          <WhatsAppIcon className="size-5" /> واتساب
+                        </WaLink>
+                        <CallLink
+                          label={`اتصال — ${u.name}`}
+                          className="flex items-center justify-center gap-2 rounded-lg border border-navy/25 bg-white px-3 py-3 text-sm font-bold text-navy transition hover:border-navy"
+                        >
+                          <Phone className="size-4" aria-hidden /> اتصل الآن
+                        </CallLink>
+                      </div>
                     </div>
                   </article>
                 </Reveal>

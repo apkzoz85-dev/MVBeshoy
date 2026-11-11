@@ -100,6 +100,13 @@ export function StickyActions() {
         </LeadButton>
       </div>
 
+      <CallLink
+        label="اتصل بنا"
+        className="call-pulse fixed bottom-[92px] left-6 z-40 hidden size-14 items-center justify-center rounded-full bg-blue text-white shadow-xl transition hover:bg-navy md:flex"
+      >
+        <Phone className="size-6" aria-hidden />
+      </CallLink>
+
       <WaLink
         label="تواصل واتساب"
         className="wa-pulse fixed bottom-6 left-6 z-40 hidden size-14 items-center justify-center rounded-full bg-wa text-white shadow-xl md:flex"
